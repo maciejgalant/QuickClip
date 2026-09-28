@@ -1,0 +1,34 @@
+[general]
+name=QuickClip
+qgisMinimumVersion=3.36
+qgisMaximumVersion=4.99
+supportsQt6=True
+description=Szybkie, jednoczesne przycinanie wielu warstw wektorowych i rastrowych do wspólnego obszaru
+about=QuickClip przycina jednym kliknięciem wszystkie (lub wybrane) warstwy wektorowe i rastrowe z projektu do wspólnego obszaru: bieżącego widoku mapy, warstwy poligonowej użytej jako maska albo poligonu narysowanego na mapie. CRS obsługiwane automatycznie, wyniki (z dopiskiem _cut) trafiają do wskazanego folderu i do podgrupy "Przycięte warstwy" w projekcie. Warstwy, które nie pokrywają się z obszarem, są pomijane.
+version=0.2.0
+author=Maciej Galant
+email=magal.pl@wp.pl
+
+homepage=https://github.com/maciejgalant/QuickClip
+tracker=https://github.com/maciejgalant/QuickClip/issues
+repository=https://github.com/maciejgalant/QuickClip
+
+category=Vector
+tags=clip,cut,extent,mask,raster,vector,przycinanie,batch
+icon=icons/icon.png
+
+experimental=True
+deprecated=False
+server=False
+hasProcessingProvider=no
+
+changelog=0.2.0
+    - Zgodność z QGIS 4.x (Qt6) oraz QGIS 3.36+
+    - Wyniki dodawane do podgrupy "Przycięte warstwy"
+    - Folder wynikowy opcjonalny (domyślnie obok projektu)
+    - Warstwy poza obszarem przycinania są pomijane
+    - Osobne okno wyboru warstw z wyszukiwarką
+    - Szybsze przycinanie (wykrywanie prostokątnego obszaru, jednokrotne wczytanie wyniku)
+    - Przezroczyste, a nie czarne tło rastrów poza maską
+    0.1.0
+    - Pierwsza wersja
